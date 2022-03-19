@@ -1,0 +1,15 @@
+<% if controller_name == "players" && action_name == "home" %>
+  <div class="navbar-invisible"></div>
+<% else %>
+  <div class="navbar">
+    <div class="logo">
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag "finish-flag.png", height: 50 %>
+      <% end %>
+    </div>
+    <div class="menu-choices">
+      <%= link_to "Voir les joueurs", players_path%>
+      <%= link_to "Ajouter un joueur", root_path%>
+    </div>
+  </div>      
+<% end %>

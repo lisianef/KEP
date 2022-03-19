@@ -1,6 +1,6 @@
 .container {
     background-color: #f0e6e5;
-    height: 100vh;
+    height: 90vh;
 }
 
 .homerow {
@@ -9,7 +9,7 @@
         margin-bottom: 110px;
         font-size: 50px;
     }
-    button {
+    .button {
         margin-left: 20px;
         font-size: 32px;
         font: nunito;
@@ -18,20 +18,31 @@
         border-color: #f0e6e5;
         transition: 0.5s;
     }
-    button:after {
+    .button:after {
         content: ' →';
         opacity: 0;  
         top: 14px;
         right: -20px;
         transition: 0.5s;
     }
-    button:hover {
+    .button:hover {
         padding-right: 24px;
         padding-left:8px;
-        color: #f0e6e5;
+        color: black;
     }
-    button:hover:after {
+    .button:hover:after {
         opacity: 1;
         right: 10px;
     }
 }
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 150px;
+    .card {
+        background-color: #f0e6e5;
+    }
+}
+

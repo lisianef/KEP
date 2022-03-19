@@ -1,10 +1,6 @@
-h1 Liste des joueurs
-
-body
-- @players.each do |player|
-    p 
-        = p player.name
-        p
-        = p player.affirmation 
-        hr
-
+.container
+    .cards 
+        - @players.each do |player|
+            .card 
+                = player.name 
+        end

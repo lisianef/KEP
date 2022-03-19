@@ -1,2 +1,9 @@
-// Import page-specific CSS files here.
-// @import "index";
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    .card {
+        background-color: #f0e6e5;
+    }
+}
+
