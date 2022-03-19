@@ -1,0 +1,36 @@
+.container {
+    background-color: #f0e6e5;
+    height: 100vh;
+}
+
+.homerow {
+    h1 {
+        text-align: center;
+        margin-bottom: 110px;
+        font-size: 50px;
+    }
+    button {
+        margin-left: 20px;
+        font-size: 32px;
+        font: nunito;
+        background-color: #f0e6e5;
+        color : black;
+        border-color: #f0e6e5;
+        transition: 0.5s;
+    }
+    button:after {
+        content: ' →';
+        opacity: 0;  
+        top: 14px;
+        right: -20px;
+        transition: 0.5s;
+    }
+    button:hover {
+        padding-right: 24px;
+        padding-left:8px;
+    }
+    button:hover:after {
+        opacity: 1;
+        right: 10px;
+    }
+}
