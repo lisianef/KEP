@@ -2,5 +2,12 @@
     .cards 
         - @players.each do |player|
             .card 
-                = player.name 
+                = image_tag 'dog.png'
+                = player.name
+                p class="italic" 
+                    = player.affirmation 
+                hr
+                p class="sci"
+                    = player.score
+                    |  points
         end

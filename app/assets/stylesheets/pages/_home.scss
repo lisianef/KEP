@@ -42,7 +42,21 @@
     grid-gap: 30px;
     margin-top: 150px;
     .card {
-        background-color: #f0e6e5;
+         background-color: #f0e6e5;
+         text-align: center;
+         font-size: 25px;
+         padding-top: 10px;
+         align-items: center;
+         img {
+             height: 100px;
+             width: 100px;
+             border-radius: 50%;
+         }
+         .italic {
+             font-style: italic;
+             height: 50px;
+             margin-top: 20px;
+             font-size: 18px;
+        }
     }
 }
-
