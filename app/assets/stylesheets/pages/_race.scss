@@ -1,2 +1,71 @@
 // Import page-specific CSS files here.
 // @import "index";
+
+// .container-first {
+//     height: 870px;
+//     width: 97vw;
+//     position: absolute;
+//     top: 66px;
+//     left: 30px;
+//     right: 30px;
+//     justify-content:space-evenly;
+//     // background-color: blue;
+// }
+
+
+// .container-race{
+//     // background-image: url('road-straight-line-top-view.png');
+//     transform: rotate(90deg);
+//     background-color: yellow;
+//     // position: relative;
+//     height: 97vw;
+//     width: 403px;
+// }
+
+// .container-points {
+//     height: 20vw;
+//     width: 69vw;
+//     background-color: pink;
+// }
+
+// .container-podium {
+//     height: 20vw;
+//     width: 27vw;
+//     background-color: green;
+    // position: fixed;
+    // right: 26px;
+    // top: 66px;
+// }
+
+.container-first {
+    display: grid;
+    grid-template-columns: 68vw 28vw;
+    gap: 10px;
+    grid-auto-rows: 30vw 15vw;
+    margin-left: 30px;
+    margin-top: 20px;;
+}
+
+.container-points {
+    grid-column: 1;
+    grid-row: 1;
+    // background-color: pink;
+}
+
+.container-podium {
+    grid-column: 2;
+    grid-row: 1;
+    border-left: solid;
+    border-width: thin;
+    img {
+        width: 80px;
+        display: block;
+        margin: auto;
+    }
+}
+
+.container-race {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    background-image: url('road-straight-line.png');
+}

@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get "/race", to: "players#race", as: :race
   get "/players", to: "players#index", as: :players
-
+  get "/players/:id", to: "players#show", as: :player
+  get "/players/new", to: "players#new", as: :new
 end

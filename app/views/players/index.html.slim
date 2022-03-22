@@ -1,13 +1,16 @@
 .container
     .cards 
         - @players.each do |player|
-            .card 
-                = image_tag 'dog.png'
-                = player.name
-                p class="italic" 
-                    = player.affirmation 
-                hr
-                p class="sci"
-                    = player.score
-                    |  points
+            .col-xs-12
+                = link_to player_path(player) do
+                    .card 
+                        = image_tag 'dog.png'
+                        = player.name
+                        p class="italic" 
+                            = player.affirmation 
+                        hr
+                        p class="sci"
+                            = player.score
+                            |  points
+                end
         end
